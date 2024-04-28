@@ -6,15 +6,14 @@ const TopNav = () => (
   <div className="topNav">
     <h1 className="logo">Crochet Hub</h1>
     <ul className="navLinks">
+    
       <li>
-        <Link to="/">Home</Link>
+        <Link to="/post-feed">Home</Link> {/* Corrected route */}
       </li>
+
       <li>
-        <Link to="/post-form">Create a Post</Link>
+        <Link to="/post-form">Create New Post</Link>
       </li> 
-      <li>
-        <Link to="/post-feed">Post Feed</Link> {/* Corrected route */}
-      </li>
     </ul>
   </div>
 );

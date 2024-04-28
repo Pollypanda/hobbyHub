@@ -37,19 +37,19 @@ const EditPost = () => {
     }
   };
   
-  const handleDelete = async () => {
-    try {
-      const { error } = await supabase.from("Posts").delete().eq("id", postId);
-      if (error) {
-        throw error;
-      }
-      alert("Post deleted successfully!");
-      // Redirect to home page or any other desired page
-      window.location.href = "/";
-    } catch (error) {
-      console.error("Error deleting post:", error.message);
-    }
-  };
+  // const handleDelete = async () => {
+  //   try {
+  //     const { error } = await supabase.from("Posts").delete().eq("id", postId);
+  //     if (error) {
+  //       throw error;
+  //     }
+  //     alert("Post deleted successfully!");
+  //     // Redirect to home page or any other desired page
+  //     window.location.href = "/";
+  //   } catch (error) {
+  //     console.error("Error deleting post:", error.message);
+  //   }
+  // };
 
   const handleChange = (event) => {
     const { name, value } = event.target;
@@ -78,7 +78,6 @@ const EditPost = () => {
         />
         </div>
         <button type="submit">Update Post</button>
-        <button type="button" onClick={handleDelete}>Delete Post</button>
       </form>
     </div>
   );
