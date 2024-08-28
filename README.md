@@ -1,4 +1,4 @@
-# Web Development Final Project - *Crichet Hub*
+# Web Development Final Project - *Crochet Hub*
 
 Submitted by: **Ploynapas Pawachot**
 
